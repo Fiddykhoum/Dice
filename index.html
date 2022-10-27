@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style/style.css" rel="stylesheet">
+  <title>Dice</title>
+</head>
+<body>
+  <header>
+    <h1>Jeu de dé</h1>
+  </header>
+  <div class="wrapper">
+    <div class="players">
+      <h2>Player 1</h2>
+      <div class="totalScore">
+        <h3>Score</h3>
+        <div id="score0">
+          <!-- render score -->
+        </div>
+      </div>
+      <div class="currentScore">
+       <h3>Courant</h3>
+       <div id="currentScore0" >
+        <!-- render le score courant ici -->
+       </div>        
+      </div>
+    </div>
+
+    <div class="commandsWrapper">
+      <!-- <img class="new" src="assets/newgame.png" alt="New game button"> -->
+      <button class="btn-new" id="replay">
+        <span class="icon">
+          <img class="new" src="assets/newgame.png" alt="New game button">
+          Rejouer
+        </span>
+      </button>
+      <!-- <span id="addScore" class="icon">Rejouer</span> -->
+      <div id="dice">
+        <!-- render les dés ici -->
+        <img class="dice" src="assets/Dice1.png" alt="Dé n°1">
+      </div>
+      <button id="dicing">Lancer dé</button>
+      <button id="addScore">
+        Ajouter au score
+      </button>
+    </div>
+
+    <div class="players">
+      <h2>Player 2</h2>
+      <div class="totalScore">
+        <h3>Score</h3>
+        <div id="score1">
+          <!-- render score -->
+        </div>
+      </div>
+      <div class="currentScore">
+        <h3>Courant</h3>
+        <div id="currentScore1" >
+          <!-- render le score courant ici mettre 0 par défaut une fois ok-->
+         </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>
+      Lancez les dés autant de fois que vous voulez, 
+      mais ne tombez pas sur le chiffre 1!!!
+    </p>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>
