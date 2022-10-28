@@ -32,21 +32,15 @@ const changePlayer = function () {
   activePlayer = activePlayer === 0 ? 1 : 0;
 };
 
-//****************/
-//   A verifier  */
-//****************/
 
-// Hold the score
 const holdScore = function () {
-  // console.log(scores)
-  // alert(player)
   scores[activePlayer] += currentScore;
   document.querySelector(`#score${activePlayer}`).textContent = scores[activePlayer];
 
   // check player score
-  if (scores[activePlayer] >= 100) {
-    document.querySelector(`.playerName-${activePlayer}`).classList.add("winner-player");
-    document.querySelector(`.playerName-${activePlayer}`).innerHTML = `<p>winner !</p>`;
+  if (scores[activePlayer] >= 15) {
+    document.getElementById(`playerName${activePlayer}`).classList.add("winner");
+    document.getElementById(`playerName${activePlayer}`).innerHTML = `<h2>Gagné !!!</h2>`;
   } else {
     changePlayer();
   }

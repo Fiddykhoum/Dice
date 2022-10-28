@@ -25,6 +25,10 @@ h2{
   background-color: rgb(169, 170, 160);
   height: 50px;
 }
+.winner{
+  font-weight: bold;
+  color: red;
+}
 .dice{
   padding: 30px;
   width: 100px;
