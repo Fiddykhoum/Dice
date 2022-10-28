@@ -38,7 +38,7 @@ const holdScore = function () {
   document.querySelector(`#score${activePlayer}`).textContent = scores[activePlayer];
 
   // check player score
-  if (scores[activePlayer] >= 15) {
+  if (scores[activePlayer] >= 100) {
     document.getElementById(`playerName${activePlayer}`).classList.add("winner");
     document.getElementById(`playerName${activePlayer}`).innerHTML = `<h2>Gagné !!!</h2>`;
   } else {
