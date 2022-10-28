@@ -6,7 +6,7 @@ let activePlayer = 0;
 const dice = document.querySelector("#dice");
 const roll = document.querySelector("#dicing");
 const hold = document.querySelector("#addScore");
-const newGame = document.querySelector("#replay");
+const newGame = document.querySelector("#startGame");
 
 const player0 = document.querySelector(".player-0");
 const player1 = document.querySelector(".player-1");
@@ -54,7 +54,7 @@ const holdScore = function () {
 
 // New game
 const replay = function () {
-  document.location.dicing();
+  document.location.reload();
 };
 
 // Listen for click events
