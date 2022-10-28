@@ -1,5 +1,8 @@
 body {
   background-image: url("../assets/bkgrd.jpg");
+  background-position: center;
+  width: 100%; 
+  background-repeat:no-repeat; 
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .wrapper{
@@ -26,14 +29,16 @@ h2{
   padding: 30px;
   width: 100px;
   height: 100px;
+  margin-left: 50%;
+  transform: translate(-50%);
 }
 header{
   height: 100px;
   text-align: center;
 }
-.icon{
-font-size: 2rem;
-}
+/* .icon{
+font-size: 1.5rem;
+} */
 .new{
 width: 35px;
 height: 35px;
@@ -48,17 +53,17 @@ width: 42%;
 min-height: 300px;
 }
 .commandsWrapper{
-  text-align: center; 
   background-color: rgba(173, 173, 152, 1);
   width: 16%;
   min-height: 600px;
   box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.8),-3px -3px 5px rgba(27, 27, 27, 0.5);
 }
+
 button{
   background-color: rgb(241, 241, 198);
   margin-top: 30px;
   margin-bottom: 120px;
-  margin-left: 30%;
+  margin-left: 50%;
   transform: translate(-50%);  
   height: 50px;
   width: 100px; 
@@ -70,11 +75,10 @@ button{
 .btn-new{
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 30%;
-  transform: translate(-25%); 
   height: 70px;
   width: 200px;
   padding-bottom: 30px;
+  font-size: 1.5rem;
 }
 button:hover {
   background-color: rgba(241, 241, 198, 0.5);
@@ -119,4 +123,20 @@ p{
 }
 footer{
     margin-top: 20px;
+}
+
+@media screen and (max-width: 900px) { 
+  .wrapper{
+    height: 800px;
+  }  
+  p{
+    height: 50px;
+    width: 90%;
+  }
+  .commandsWrapper{
+    width: 20%;
+  }
+  .players{  
+    width: 40%;
+  }
 }
