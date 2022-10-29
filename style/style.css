@@ -166,6 +166,9 @@ footer{
   h2{
     font-size: 1.3rem;
   }
+  header{
+    height: 65px;
+  }
 }
 
 @media screen and (max-width: 480px) { 
