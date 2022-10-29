@@ -8,8 +8,8 @@ const roll = document.querySelector("#dicing");
 const hold = document.querySelector("#addScore");
 const newGame = document.querySelector("#startGame");
 
-const player0 = document.querySelector(".player-0");
-const player1 = document.querySelector(".player-1");
+const player0 = document.querySelector(".playerClass0");
+const player1 = document.querySelector(".playerClass1");
 
 // Roll dice
 const rollDice = function () {
@@ -24,14 +24,15 @@ const rollDice = function () {
     changePlayer();
   }
 };
-
 // Change player
 const changePlayer = function () {
   currentScore = 0;
   document.querySelector(`#currentScore${activePlayer}`).textContent = 0;
   activePlayer = activePlayer === 0 ? 1 : 0;
+  
+  player0.classList.toggle("active");
+  player1.classList.toggle("active");
 };
-
 
 const holdScore = function () {
   scores[activePlayer] += currentScore;
