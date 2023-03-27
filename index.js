@@ -2,8 +2,9 @@ let randomDiceNumber = 0;
 let currentScore= 0;  
 let scores = [0, 0];
 let activePlayer = 0;
-
-const dice = document.querySelector("#dice");
+//
+const dice = document.getElementById("dice");
+//const dice = document.querySelector("#dice");
 const roll = document.querySelector("#dicing");
 const hold = document.querySelector("#addScore");
 const newGame = document.querySelector("#startGame");
